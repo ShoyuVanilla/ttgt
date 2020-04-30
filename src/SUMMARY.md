@@ -1,6 +1,6 @@
 # Summary
 
-- [소개](./introduction.md)
+- [The Techie Gamemaster's Tome](./README.md)
 - [가상 게임테이블](./vtt/README.md)
 	- [Roll20](./vtt/roll20/README.md)
 	- [Foundry Virtual Tabletop](./vtt/foundryvtt/README.md)
