@@ -1,9 +1,9 @@
 <!DOCTYPE HTML>
-<html lang="ko" class="sidebar-visible no-js light">
+<html lang="ko" class="sidebar-visible no-js coal">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>소개 - The Techie Gamemaster's Tome</title>
+        <title>The Techie Gamemaster's Tome - The Techie Gamemaster's Tome</title>
         
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -38,7 +38,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "coal";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -64,7 +64,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('light')
+            html.classList.remove('coal')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="introduction.html"><strong aria-hidden="true">1.</strong> 소개</a></li><li class="chapter-item expanded "><a href="vtt/index.html"><strong aria-hidden="true">2.</strong> 가상 게임테이블</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="vtt/roll20/index.html"><strong aria-hidden="true">2.1.</strong> Roll20</a></li><li class="chapter-item expanded "><a href="vtt/foundryvtt/index.html"><strong aria-hidden="true">2.2.</strong> Foundry Virtual Tabletop</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="vtt/foundryvtt/features/index.html"><strong aria-hidden="true">2.2.1.</strong> 기능 소개</a></li><li class="chapter-item expanded "><a href="vtt/foundryvtt/hosting/index.html"><strong aria-hidden="true">2.2.2.</strong> 호스팅</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="vtt/foundryvtt/hosting/host_with_pc.html"><strong aria-hidden="true">2.2.2.1.</strong> 개인 PC로 호스팅하기</a></li><li class="chapter-item expanded "><a href="vtt/foundryvtt/hosting/cloud_server.html"><strong aria-hidden="true">2.2.2.2.</strong> 전용 서버 개설하기</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="soundboard/index.html"><strong aria-hidden="true">3.</strong> 사운드보드</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html" class="active">The Techie Gamemaster's Tome</a></li><li class="chapter-item expanded "><a href="vtt/index.html">가상 게임테이블</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vtt/roll20/index.html">Roll20</a></li><li class="chapter-item "><a href="vtt/foundryvtt/index.html">Foundry Virtual Tabletop</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vtt/foundryvtt/features/index.html">기능 소개</a></li><li class="chapter-item "><a href="vtt/foundryvtt/hosting/index.html">호스팅</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="vtt/foundryvtt/hosting/host_with_pc.html">개인 PC로 호스팅하기</a></li><li class="chapter-item "><a href="vtt/foundryvtt/hosting/cloud_server.html">전용 서버 개설하기</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="soundboard/index.html">사운드보드</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -102,9 +102,9 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
@@ -120,6 +120,10 @@
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/ShoyuVanilla/ttgt/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
                         
                     </div>
@@ -149,16 +153,16 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1><a class="header" href="#소개" id="소개">소개</a></h1>
-<p>기본적으로 TRPG는 펜과 종이만 가지고 할 수 있는 놀이입니다.
-드라마 빅뱅 이론에 &quot;상상력은 세계 최고의 그래픽카드&quot;라는 대사가 있듯 별다른 도구 없이도 얼마든지 몰입감 있고 재미있게 즐길 수 있습니다.</p>
+                        <h1><a class="header" href="#the-techie-gamemasters-tome" id="the-techie-gamemasters-tome">The Techie Gamemaster’s Tome</a></h1>
+<p>기본적으로 TRPG는 펜과 종이만 가지고 할 수 있는 게임입니다.
+드라마 빅뱅 이론에 “상상력은 세계 최고의 그래픽카드”라는 대사가 있듯 별다른 도구 없이도 얼마든지 몰입감 있고 재미있게 즐길 수 있습니다.</p>
 <p>그러나 게임마스터로서 마스터링을 하다 보면 여러 가지 수단을 활용해 세션을 더욱 풍성하게 꾸미고 싶은 욕심이 생깁니다.
 하지만 이미 룰북과 자료 구입에 많은 돈을 소비한 상황에서 미니어쳐나 각종 RPG 용품 가격을 보면 이렇게 부푼 마음도 꺾이고 맙니다.
 국내에서는 구입하기가 번거롭다는 것도 방해 요인 중 하나입니다.</p>
 <p>이러한 상황에서 다양한 멀티미디어 환경을 구성할 수 있는 가장 저렴한 대안은 컴퓨터입니다.
 TRPG를 온라인으로 즐기는 ORPG의 경우 컴퓨터가 유일한 수단이기도 합니다.
 다들 컴퓨터 있잖아요?</p>
-<p>이 사이트를 통해 지갑은 얇고 의욕은 넘치는 게임마스터를 위해 TRPG에 활용할 수 있는 몇 가지 디지털 툴을 소개하고자 합니다.
+<p>이 사이트를 통해 TRPG에 활용할 수 있는 몇 가지 디지털 툴을 소개하고자 합니다.
 개인적인 사용 경험을 바탕으로 작성했기 때문에 여기에 실리지 않은 다른 좋은 툴도 많이 있을 것입니다.
 혹시 소개하고 싶으신 툴이 있거나 이 사이트의 정보에서 오류를 찾으셨다면 shoyuvanilla@gmail.com으로 제보해 주시면 감사드리겠습니다.</p>
 

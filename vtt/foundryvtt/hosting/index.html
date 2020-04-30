@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ko" class="sidebar-visible no-js light">
+<html lang="ko" class="sidebar-visible no-js coal">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -38,7 +38,7 @@
         <!-- Provide site root to javascript -->
         <script type="text/javascript">
             var path_to_root = "../../../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "coal";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
@@ -64,7 +64,7 @@
             if (theme === null || theme === undefined) { theme = default_theme; }
             var html = document.querySelector('html');
             html.classList.remove('no-js')
-            html.classList.remove('light')
+            html.classList.remove('coal')
             html.classList.add(theme);
             html.classList.add('js');
         </script>
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../introduction.html"><strong aria-hidden="true">1.</strong> 소개</a></li><li class="chapter-item expanded "><a href="../../../vtt/index.html"><strong aria-hidden="true">2.</strong> 가상 게임테이블</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../vtt/roll20/index.html"><strong aria-hidden="true">2.1.</strong> Roll20</a></li><li class="chapter-item expanded "><a href="../../../vtt/foundryvtt/index.html"><strong aria-hidden="true">2.2.</strong> Foundry Virtual Tabletop</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../vtt/foundryvtt/features/index.html"><strong aria-hidden="true">2.2.1.</strong> 기능 소개</a></li><li class="chapter-item expanded "><a href="../../../vtt/foundryvtt/hosting/index.html" class="active"><strong aria-hidden="true">2.2.2.</strong> 호스팅</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../vtt/foundryvtt/hosting/host_with_pc.html"><strong aria-hidden="true">2.2.2.1.</strong> 개인 PC로 호스팅하기</a></li><li class="chapter-item expanded "><a href="../../../vtt/foundryvtt/hosting/cloud_server.html"><strong aria-hidden="true">2.2.2.2.</strong> 전용 서버 개설하기</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../soundboard/index.html"><strong aria-hidden="true">3.</strong> 사운드보드</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../index.html">The Techie Gamemaster's Tome</a></li><li class="chapter-item expanded "><a href="../../../vtt/index.html">가상 게임테이블</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../vtt/roll20/index.html">Roll20</a></li><li class="chapter-item expanded "><a href="../../../vtt/foundryvtt/index.html">Foundry Virtual Tabletop</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../vtt/foundryvtt/features/index.html">기능 소개</a></li><li class="chapter-item expanded "><a href="../../../vtt/foundryvtt/hosting/index.html" class="active">호스팅</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../vtt/foundryvtt/hosting/host_with_pc.html">개인 PC로 호스팅하기</a></li><li class="chapter-item "><a href="../../../vtt/foundryvtt/hosting/cloud_server.html">전용 서버 개설하기</a></li></ol></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../soundboard/index.html">사운드보드</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -102,9 +102,9 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal (default)</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
@@ -120,6 +120,10 @@
                     <div class="right-buttons">
                         <a href="../../../print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/ShoyuVanilla/ttgt/" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
                         
                     </div>
