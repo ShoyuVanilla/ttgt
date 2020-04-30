@@ -1,9 +1,0 @@
-[book]
-authors = ["Shoyu Vanilla"]
-language = "ko"
-multilingual = false
-src = "src"
-title = "The Techie Gamemaster's Tome"
-
-[output.html]
-additional-css = ["src/style.css"]
