@@ -5,5 +5,17 @@ multilingual = false
 src = "src"
 title = "The Techie Gamemaster's Tome"
 
+[preprocessor.links]
+
+[preprocessor.index]
+
 [output.html]
+default-theme = "Coal"
 additional-css = ["src/style.css"]
+curly-quotes = true
+git-repository-url = "https://github.com/ShoyuVanilla/ttgt/"
+no-section-label = true
+
+[output.html.fold]
+enable = true
+level = 1
