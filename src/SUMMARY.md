@@ -8,4 +8,6 @@
 		- [호스팅](./vtt/foundryvtt/hosting/README.md)
 			- [개인 PC로 호스팅하기](./vtt/foundryvtt/hosting/host_with_pc.md)
 			- [전용 서버 개설하기](./vtt/foundryvtt/hosting/cloud_server.md)
+			- [호스팅 위탁하기](./vtt/foundryvtt/hosting/outsourcing.md)
+	- [TaleSpire](./vtt/talespire/README.md)
 - [사운드보드](./soundboard/README.md)
