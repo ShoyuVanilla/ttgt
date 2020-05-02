@@ -13,6 +13,7 @@ title = "The Techie Gamemaster's Tome"
 default-theme = "Coal"
 additional-css = ["src/style.css"]
 curly-quotes = true
+google-analytics = "165350989"
 git-repository-url = "https://github.com/ShoyuVanilla/ttgt/"
 no-section-label = true
 

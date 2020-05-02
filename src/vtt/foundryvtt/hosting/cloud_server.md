@@ -4,4 +4,10 @@
 > ssh 클라이언트 등 별도 프로그램 설치나 리눅스 터미널 명령은 생소할 것이라 생각해 가능한 줄였습니다.
 > 좀 더 일반적인 가이드는 [Foundry Virtual Tabletop 커뮤니티 위키](https://foundry-vtt-community.github.io/wiki/Ubuntu-VM/)를 참고하시기 바랍니다.
 
-내용 작성 예정
+## 클라우드 컴퓨팅 서비스 선택
+
+## 설치
+
+## 파일 관리 및 백업
+
+## 도메인 및 SSL 설정(선택)
