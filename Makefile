@@ -2,7 +2,7 @@
 deploy: book
 	mdbook build
 	@echo "====> deploying to github"
-	# git worktree add /tmp/book gh-pages # Uncomment on new machines
+	# git worktree add /tmp/book gh-pages
 	rm -rf /tmp/book/*
 	cp -rp book/* /tmp/book/
 	cd /tmp/book && \
