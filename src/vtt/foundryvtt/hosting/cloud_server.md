@@ -51,7 +51,9 @@
 위 이미지와 같이 터미널이 열리면 다음 명령어를 복사해서 붙여넣은 후 엔터 키를 누릅니다.
 이는 서버 구축을 위해 필요한 프로그램 설치 및 설정을 자동화한 코드입니다.
 
-`bash <(curl -s https://raw.githubusercontent.com/ShoyuVanilla/FoundryVTT-docker-compose/master/install.sh)`
+```
+bash <(curl -s https://raw.githubusercontent.com/ShoyuVanilla/FoundryVTT-docker-compose/master/install.sh)
+```
 
 입력하면 메시지가 여러 줄 뜨면서 각종 설치가 진행될 것입니다.
 
@@ -61,7 +63,9 @@
 
 설치가 완료되면 터미널에 다음 명령어를 입력한 후 엔터 키를 누릅니다.
 
-`start-foundry`
+```
+start-foundry
+```
 
 ![](../images/fvtt_cloud08.png)
 
