@@ -159,11 +159,11 @@ Foundry Virtual Tabletop이 설치되었으니 이제 빈 껍데기뿐이었던 
 다시 터미널 창을 연 후
 
 ```
-foundry up
+foundry down
 ```
 를 통해 컨테이너를 중지한 후
 ```
-foundry down
+foundry up
 ```
 를 통해 컨테이너를 다시 실행합니다.
 
