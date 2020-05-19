@@ -346,7 +346,7 @@ ssh 클라이언트 등 별도 프로그램 설치나 리눅스 터미널 명령
 <p><img src="vtt/foundryvtt/hosting/../images/fvtt_cloud07.png" alt="" /></p>
 <p>잠시 후 위와 같이 설치 과정에서 서비스 몇 가지를 자동으로 재시작할지를 묻는 메시지가 뜨면 왼쪽 방향키를 눌러 &lt;Yes&gt;를 선택한 후 엔터 키를 누릅니다.</p>
 <p>설치가 완료되면 터미널에 다음 명령어를 입력한 후 엔터 키를 누릅니다.</p>
-<pre><code>start-foundry
+<pre><code>foundry up
 </code></pre>
 <p><img src="vtt/foundryvtt/hosting/../images/fvtt_cloud08.png" alt="" /></p>
 <p>정상적으로 진행된다면 위와 같이</p>
@@ -356,7 +356,7 @@ Creating foundryvtt      ... done
 <p>이라는 메시지가 표시될 것입니다.
 혹시 에러가 발생할 경우 터미널에 <code>sudo su ${USER}</code>를 입력한 후 엔터 키를 누르거나 터미널 창을 닫았다가 다시 연 후 재시도합니다.</p>
 <h2><a class="header" href="#파일-매니저-설정" id="파일-매니저-설정">파일 매니저 설정</a></h2>
-<p><code>start-foundry</code> 명령어로 현재 서버에서는 <a href="https://ko.wikipedia.org/wiki/%EB%8F%84%EC%BB%A4_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4)">Docker</a>라는 플랫폼에서 파일 매니저와 Foundry Virtual Tabletop이 실행 중입니다.</p>
+<p><code>foundry up</code> 명령어로 현재 서버에서는 <a href="https://ko.wikipedia.org/wiki/%EB%8F%84%EC%BB%A4_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4)">Docker</a>라는 플랫폼에서 파일 매니저와 Foundry Virtual Tabletop이 실행 중입니다.</p>
 <p>그러나 이 가이드의 첫 부분에서 다운로드한 Foundry Virtual Tabletop을 아직 서버에 설치하지 않았기 때문에 현재 서버에서 돌아가는 Foundry Virtual Tabletop은 껍데기만 있는 상태입니다.
 파일 매니저를 이용해 Foundry Virtual Tabletop를 서버에 설치할 것입니다.</p>
 <p><img src="vtt/foundryvtt/hosting/../images/fvtt_cloud09.png" alt="" /></p>
@@ -402,10 +402,10 @@ Password: admin@123
 <p>UnZip을 클릭하면 압축이 해제됩니다.
 Foundry Virtual Tabletop이 설치되었으니 이제 빈 껍데기뿐이었던 기존 컨테이너를 다시 시작할 차례입니다.</p>
 <p>다시 터미널 창을 연 후</p>
-<pre><code>stop-foundry
+<pre><code>foundry up
 </code></pre>
 <p>를 통해 컨테이너를 중지한 후</p>
-<pre><code>start-foundry
+<pre><code>foundry down
 </code></pre>
 <p>를 통해 컨테이너를 다시 실행합니다.</p>
 <p><img src="vtt/foundryvtt/hosting/../images/fvtt_cloud18.png" alt="" /></p>
@@ -448,16 +448,16 @@ Foundry Virtual Tabletop에서 이미지나 음원 등을 불러올 때 내부 �
 애플리케이션 드롭다운 메뉴에서 <strong>HTTPS</strong>를 선택해 HTTPS 접속에 쓰이는 443번 포트를 개방하는 규칙을 생성합니다.
 기존에 열어 두었던 8080번 포트는 이제 사용하지 않으니 규칙에서 삭제합니다.</p>
 <p>터미널 창을 열고</p>
-<pre><code>stop-foundry
+<pre><code>foundry down
 </code></pre>
 <p>를 통해 실행 중인 컨테이너를 중지한 후</p>
-<pre><code>start-foundry-https
+<pre><code>foundry-https up
 </code></pre>
 <p>를 통해 HTTPS 설정으로 다시 실행하면 SSL 설정이 완료됩니다.
-중지 명령어는 <code>stop-foundry-https</code>입니다.</p>
+중지 명령어는 <code>foundry-https down</code>입니다.</p>
 <blockquote>
 <p>⚠️ SSL 설정 후 접속이 되지 않을 경우, 이는 DNS 정보가 Let’s Encrypt의 DNS 서버까지 퍼지지 않아서일 수 있습니다. 새로 서브도메인을 생성하거나 변경한 후 얼마 지나지 않은 경우 이러한 일이 발생합니다.
-몇 시간 ~ 최대 이틀 뒤에 다시 <code>start-foundry-https</code> 명령어로 재시도하십시오.</p>
+몇 시간 ~ 최대 이틀 뒤에 다시 <code>foundry-https up</code> 명령어로 재시도하십시오.</p>
 </blockquote>
 <h1><a class="header" href="#호스팅-위탁하기" id="호스팅-위탁하기">호스팅 위탁하기</a></h1>
 <p>내용 작성 예정</p>
