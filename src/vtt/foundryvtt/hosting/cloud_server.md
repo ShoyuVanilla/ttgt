@@ -145,7 +145,7 @@ Password: admin@123
 
 파일 매니저 초기 페이지에서 `foundryvtt` 폴더 이름을 클릭해 폴더로 이동합니다.
 우측 상단의 **Upload** 버튼을 클릭하면 드래그 앤 드롭을 통해 파일을 업로드할 수 있는 페이지가 열립니다.
-이 가이드의 첫 부분에서 다운받은 Foundry Virtual Tabletop 압축 파일을 끌어다 놓습니다.
+이 가이드의 첫 부분에서 다운로드한 Foundry Virtual Tabletop 압축 파일을 끌어다 놓습니다.
 
 ![](../images/fvtt_cloud16.png)
 
@@ -153,7 +153,7 @@ Password: admin@123
 
 ![](../images/fvtt_cloud17.png)
 
-Unzip을 클릭하면 압축이 해제됩니다.
+UnZip을 클릭하면 압축이 해제됩니다.
 Foundry Virtual Tabletop이 설치되었으니 이제 빈 껍데기뿐이었던 기존 컨테이너를 다시 시작할 차례입니다.
 
 다시 터미널 창을 연 후
@@ -189,6 +189,7 @@ Foundry Virtual Tabletop 데이터가 저장되는 폴더는 `foundryvttdata` �
 `foundryvttdata` 폴더 아래에는 `Config`, `Data`, `Logs` 폴더가 있습니다.
 
 `Config` 폴더는 라이선스 및 Foundry Virtual Tabletop 기본 설정이 저장되는 폴더이며, `Logs` 폴더는 서버 구동 중에 발생한 로그(인게임 채팅 로그와는 무관)나 에러 등이 저장되는 공간입니다.
+
 업로드 및 백업을 위해 신경써야 할 하는 폴더는 `Data` 폴더입니다.
 Foundry Virtual Tabletop에서 이미지나 음원 등을 불러올 때 내부 파일 탐색기로 접근할 수 있는 파일은 이 `Data` 폴더 아래에 있는 파일 및 폴더에 한정됩니다.
 따라서 게임에 쓰기 위한 멀티미디어 파일을 업로드할 때에는 `Data` 폴더나 그 하위 폴더를 이용해야 합니다.
