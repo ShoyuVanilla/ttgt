@@ -64,7 +64,7 @@ bash <(curl -s https://raw.githubusercontent.com/ShoyuVanilla/FoundryVTT-docker-
 설치가 완료되면 터미널에 다음 명령어를 입력한 후 엔터 키를 누릅니다.
 
 ```
-start-foundry
+foundry up
 ```
 
 ![](../images/fvtt_cloud08.png)
@@ -81,7 +81,7 @@ Creating foundryvtt      ... done
 
 ## 파일 매니저 설정
 
-`start-foundry` 명령어로 현재 서버에서는 [Docker](https://ko.wikipedia.org/wiki/%EB%8F%84%EC%BB%A4_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4))라는 플랫폼에서 파일 매니저와 Foundry Virtual Tabletop이 실행 중입니다.
+`foundry up` 명령어로 현재 서버에서는 [Docker](https://ko.wikipedia.org/wiki/%EB%8F%84%EC%BB%A4_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4))라는 플랫폼에서 파일 매니저와 Foundry Virtual Tabletop이 실행 중입니다.
 
 그러나 이 가이드의 첫 부분에서 다운로드한 Foundry Virtual Tabletop을 아직 서버에 설치하지 않았기 때문에 현재 서버에서 돌아가는 Foundry Virtual Tabletop은 껍데기만 있는 상태입니다.
 파일 매니저를 이용해 Foundry Virtual Tabletop를 서버에 설치할 것입니다.
@@ -159,11 +159,11 @@ Foundry Virtual Tabletop이 설치되었으니 이제 빈 껍데기뿐이었던 
 다시 터미널 창을 연 후
 
 ```
-stop-foundry
+foundry up
 ```
 를 통해 컨테이너를 중지한 후
 ```
-start-foundry
+foundry down
 ```
 를 통해 컨테이너를 다시 실행합니다.
 
@@ -237,14 +237,14 @@ PC로 다운로드할 수 있습니다.
 
 터미널 창을 열고
 ```
-stop-foundry
+foundry down
 ```
 를 통해 실행 중인 컨테이너를 중지한 후
 ```
-start-foundry-https
+foundry-https up
 ```
 를 통해 HTTPS 설정으로 다시 실행하면 SSL 설정이 완료됩니다.
-중지 명령어는 `stop-foundry-https`입니다.
+중지 명령어는 `foundry-https down`입니다.
 
 >⚠️ SSL 설정 후 접속이 되지 않을 경우, 이는 DNS 정보가 Let's Encrypt의 DNS 서버까지 퍼지지 않아서일 수 있습니다. 새로 서브도메인을 생성하거나 변경한 후 얼마 지나지 않은 경우 이러한 일이 발생합니다.
->몇 시간 ~ 최대 이틀 뒤에 다시 `start-foundry-https` 명령어로 재시도하십시오.
+>몇 시간 ~ 최대 이틀 뒤에 다시 `foundry-https up` 명령어로 재시도하십시오.
